@@ -4,6 +4,7 @@ import "./blogItem.scss";
 import { useHistory } from "react-router-dom";
 
 const BlogItem = (props) => {
+  console.log("props: ", props);
   const history = useHistory();
   // _id ini akan dikirimkan dari home page
   const { image, title, name, date, body, _id, onDelete } = props;
